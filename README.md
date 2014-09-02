@@ -1,7 +1,7 @@
 Related Topics Simple Tag List
 ==============================
 
-The final output checks each tag and only displays it if at least one other post exists. If exactly one other article has that tag, the tag name then links directly to that post. Otherwise, the tag name will link to the tag archive.
+Related Topics Simple Tag List checks each tag attached to a post and only displays it if at least one other post exists. If exactly one other article has that tag, the tag name then links directly to that post. Otherwise, the tag name will link to the tag archive.
 
 Not only are links intelligently created, but the link’s title attribute is updated to say “View Related Post” if linking directly to post, or “View Archive of Related Posts” if linking to tag archive.
 
