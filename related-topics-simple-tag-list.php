@@ -40,7 +40,7 @@ require_once plugin_dir_path( __FILE__ ) . 'rtstl-options.php';
 	
 	// Assign option values to variables
 	$rtstl_theme = isset($rtstl_options['rtstl_theme']) ? $rtstl_options['rtstl_theme'] : 'inline';
-	$rtstl_separator = isset($rtstl_options['rtstl_inline_separator']) ? $rtstl_options['rtstl_inline_separator'] : '|';
+	$rtstl_separator = isset($rtstl_options['rtstl_inline_separator']) ? $rtstl_options['rtstl_inline_separator'] : 'pipe';
 	$rtstl_html_before = isset($rtstl_options['rtstl_html_before']) ? $rtstl_options['rtstl_html_before'] : '<h3>Related Topics</h3>';
 	$rtstl_html_after = isset($rtstl_options['rtstl_html_after']) ? $rtstl_options['rtstl_html_after'] : '';
 	$rtstl_tag_number = isset($rtstl_options['rtstl_tag_number']) ? $rtstl_options['rtstl_tag_number'] : '5';
@@ -108,7 +108,7 @@ require_once plugin_dir_path( __FILE__ ) . 'rtstl-options.php';
 					$rtstl_output .= '</li>';
 				
 				// Add separator if using inline theme
-				if( $rtstl_theme == 'inline' && ( $rtstl_tag_counter < $rtstl_tag_count ) ) {
+				if( ( $rtstl_theme == 'select' || $rtstl_theme == 'inline' ) && ( $rtstl_tag_counter < $rtstl_tag_count ) ) {
 					switch($rtstl_separator) {
 						case 'space':
 							$separator = ' ';
