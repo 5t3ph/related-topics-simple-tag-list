@@ -3,7 +3,7 @@
  * Plugin Name: Related Topics Simple Tag List
  * Plugin URI: https://github.com/5t3ph/related-topics-simple-tag-list
  * Description: Outputs a basic inline or bulleted list of the current post's tags with intelligent display & customizable options. 
- * Version: 1.0
+ * Version: 1.1
  * Author: Stephanie Eckles
  * Author URI: http://thinkdobecreate.com
  * License: GPL2
